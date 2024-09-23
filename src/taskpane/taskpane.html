@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dylan Thomas Poem Add-in</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+
+    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/. -->
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"/>
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="ms-font-m ms-welcome ms-Fabric">
+    <header class="ms-welcome__header ms-bgColor-neutralLighter">
+        <img width="90" height="90" src="../../assets/logo-filled.png" alt="Contoso" title="Contoso" />
+        <h1 class="ms-font-su">Dylan Thomas Poem Add-in</h1>
+    </header>
+    <section id="sideload-msg" class="ms-welcome__main">
+        <h2 class="ms-font-xl">Please sideload your add-in to see app body.</h2>
+    </section>
+    <main id="app-body" class="ms-welcome__main" style="display: none;">
+        <h2 class="ms-font-xl">Explore "Do Not Go Gentle Into That Good Night"</h2>
+        <ul class="ms-List ms-welcome__features">
+            <li class="ms-ListItem">
+                <span class="ms-font-m">Insert the full poem into your document</span>
+            </li>
+            <li class="ms-ListItem">
+                <span class="ms-font-m">Analyze the poem's structure and themes</span>
+            </li>
+            <li class="ms-ListItem">
+                <span class="ms-font-m">Learn about Dylan Thomas and his work</span>
+            </li>
+        </ul>
+        <p class="ms-font-m">Choose an action:</p>
+        <button id="insert-poem" class="ms-Button ms-Button--primary">
+            <span class="ms-Button-label">Insert Poem</span>
+        </button>
+        <button id="analyze-poem" class="ms-Button ms-Button--primary">
+            <span class="ms-Button-label">Analyze Poem</span>
+        </button>
+        <button id="poet-info" class="ms-Button ms-Button--primary">
+            <span class="ms-Button-label">About Dylan Thomas</span>
+        </button>
+    </main>
+</body>
+</html>
